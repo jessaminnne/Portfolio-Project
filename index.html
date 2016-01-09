@@ -1,0 +1,129 @@
+<html lang="en">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
+    <meta charset='utf-8'>
+    <title>Jessamine</title>
+<!--link to bootstrap here if using it-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+<!--fancy hamburger menu-->
+    <nav class="navbar navbar-default navbar-fixed-top jbm-header">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand page-scroll" href="#page-top">Jessamine<br>Bartley-<br>Matthews</a> -->
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden active"><a href="#page-top"></a></li>
+            <li class><a class="page-scroll" href="About.html">About</a></li>
+            <li class><a class="active" href="index.html">Portfolio</a></li>
+            <li class><a class="page-scroll" href="photography.html">Photos</a></li>
+            <li class><a class="page-scroll" href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+    <!-- <div class="header-image">
+    <h1 class="logo">Jessamine<br>Bartley-<br>Matthews</h1> -->
+    <div class="container">
+      <!-- <div class="greeting-text">Hello!</div> -->
+      <a class="jbm-name">Jessamine<br>Bartley-<br>Matthews</a>
+      <div class="intro-text">I'm Jessamine, and I'm a</div>
+      <div id=#randomword class="descriptor-text">total disaster</div>
+      <a href="#project-list" class="page-scroll btn btn-xl portfolio-button">Take a look</a>
+      <br><i class="fa fa-angle-double-down"></i>
+
+    </header>
+  </div>
+    <ul id="project-list" class="row">
+      <h1>Portfolio</h1>
+      <li class="portfolio-item col-xs-12 col-sm-6 col-md-4">
+          <div class="project-desc">
+          <div class="project-thumb">
+            <img class="first-image" src= "img/zompopo.jpg" alt="Display of home screen on mobile phone with smiling ant logo.">
+            <h2>Zompopo App</h2>
+            <h3>User Research, Wireframes</h3>
+          </li>
+          </div>
+          </div>
+
+      <li class="portfolio-item col-xs-12 col-sm-6 col-md-4">
+          <div class="project-desc">
+          <div class="project-thumb">
+            <img src= "img/johanna.jpg" alt="Incarcerated woman in Costa Rica.">
+            <h2>Photo Essay</h2>
+            <h3>Photographer, Editor</h3>
+          </li>
+          </div>
+          </div>
+
+      <li class="portfolio-item col-xs-12 col-sm-6 col-md-4">
+          <div class="project-desc">
+          <div class="project-thumb">
+            <img src= "img/map-icons.jpg" alt="Custom icons for Argentina, Ecuador, Bolivia, and Mexico.">
+            <h2>LatAm Map Icons</h2>
+            <h3>Designer</h3>
+          </li>
+          </div>
+          </div>
+      <!-- <li class="portfolio-item col-xs-12 col-sm-6 col-md-4">
+          <div class="project-desc">
+          <div class="project-thumb">
+            <img src= "img/zompopo.jpg" alt="Display of home screen on mobile phone with smiling ant logo.">
+            <h2>Some Other Project</h2>
+            <h3>Role</h3>
+          </li>
+          </div>
+          </div> -->
+        </ul>
+  </div>
+    <footer>
+      <ul class="footer-links">
+        <a href="https://instagram.com/jessaminnne/"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/jessaminnne"><i class="fa fa-twitter-square"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=920193"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://www.linkedin.com/in/jessaminebartleymatthews"><i class="fa fa-linkedin-square"></i></a>
+    </ul>
+    <p class="copyright">Design and Content &copy; 2015 Jessamine Bartley-Matthews</a>
+    </footer>
+
+	  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="/path/to/noframework.waypoints.min.js"></script>
+
+    <script>
+  var myImage = document.querySelector('img');
+
+  myImage.onmouseover = function() {
+    var mySrc = myImage.getAttribute('src');
+    if(mySrc === 'img/zompopo.jpg') {
+      myImage.setAttribute ('src','img/test-image.jpg');
+    } else {
+      myImage.setAttribute ('src','img/zompopo.jpg');
+    }
+}
+</script>
+<script>
+  var randomWord = document.getElementById('randomword');
+
+  randomWord.onload = randomWord.innerHTML = 'a kitten';
+</script>
+  </body>
+</html>

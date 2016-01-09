@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* PAGE LAYOUT */
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+      box-sizing: border-box;
+}
+
+/* normal CSS goes here */
+
+/* Font */
+@font-face {
+  font-family: 'Poly', serif;
+  src: local('Poly'),url('Poly.woff');
+}
+
+header{
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+}
+
+a{
+  color: purple;
+  font-family:'Poly', serif;
+  text-transform: uppercase;
+  font-weight:bold;
+}
+
+.header-image{
+  padding-top: 0;
+  margin: 0;
+  background-image: url(../img/asters.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 80%;
+  color: white;
+  z-index: 10;
+  vertical-align: top;
+  /*background-attachment:fixed;*/
+}
+
+#about-btn{
+  padding-right: 1em;
+}
+
+nav{
+  position: fixed;
+  text-align: right;
+  float: right;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-bottom: none;
+  width: 100%;
+  z-index: 10;
+  margin-bottom: none;
+}
+
+.nav{
+  float: right!important;
+  margin-right: -15px;
+}
+
+.logo{
+  float: left;
+  padding-top: 8%;
+  padding-left: 2%;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: absolute;
+  font-family:'Poly', serif;
+  font-style: italic;
+}
+
+body{
+  font-family: 'Poly', serif;
+}
+
+#project-list{
+  margin: 0;
+  vertical-align: top;
+  position:relative;
+  top: 0px;
+}
+
+img{
+  height: 15em;
+  width: 15em;
+  display: inline-block;
+  padding:1em;
+  align-content: center;
+}
+
+.project-thumb{
+  margin: 10%;
+}
+
+.footer-nav{
+  text-decoration: none;
+  float: right;
+  display: block;
+}
+
+footer{
+  font-size: 10pt;
+  width: 100%;
+  background-color: #dfe2e5;
+	clear:both;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* media queries for responsivity */
+@media only screen and (max-width: 480px){
+  .logo{
+    font-size: 125%;
+  }
+  .header-image{
+    background-image: url(../img/asters-mobile.jpg);
+  }
+/* everything that's different for mobile version goes in here */
+}
+
+@media only screen and (min-width: 481px) and (max-width:719px){
+  h1{
+    font-size: 200%;
+  }
+  header{
+  }
+  /*You can use different images using different URLs for different sizes of page*/
+
+/* everything that's different for tablet version goes in here */
+}
+@media only screen and (min-width: 720px){
+  h1{
+    font-size: 300%;
+  }
+  .header-image{
+    background-size: 100%;
+  }
+/* everything that's different for the full-screen version goes in here */
+}
+
+@media print{
+/* take off fanciness for printing? */
+}
